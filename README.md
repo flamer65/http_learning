@@ -19,6 +19,22 @@ Check off each topic as you complete it:
 - [✅] **11 — CORS** (Cross-Origin Resource Sharing — how browsers handle cross-origin requests)
 - [✅] **12 — HTTP Caching** (Cache-Control, ETags, Vary, CDN caching strategies)
 
+## Part 2: Implementation with Express.js (Test-First)
+
+- [ ] **13 — Raw HTTP Server** (Build a server with node:http — no framework)
+- [ ] **14 — Express Basics** (Express as a wrapper, app vs server, first routes)
+- [ ] **15 — Routing & Params** (Route params, query strings, Router, all HTTP methods)
+- [ ] **16 — Request & Response** (Content negotiation, headers, status codes, redirects)
+- [ ] **17 — CORS & Preflight** (Manual CORS, OPTIONS, preflight, credentials, Vary)
+- [ ] **18 — HTTP Caching** (Cache-Control, ETag, 304, Vary, per-route strategies)
+- [ ] **19 — Middleware Pipeline** (next(), order, auth, logging, error handling)
+- [ ] **20 — Cookies, Sessions & Auth** (Set-Cookie, sessions, JWT, CSRF)
+- [ ] **21 — Security Headers** (HSTS, CSP, helmet, rate limiting, input validation)
+- [ ] **22 — Separation of Concerns** (Routes → Controllers → Services → Repositories)
+- [ ] **23 — Database Layer** (SQLite, migrations, repository pattern swap)
+- [ ] **24 — Error Handling** (Custom errors, centralized handler, async errors)
+- [ ] **25 — Capstone: Bookshelf API** (Full REST API bringing everything together)
+
 ---
 
 ## 🛠 Tools You'll Use

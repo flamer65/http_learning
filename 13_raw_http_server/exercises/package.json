@@ -1,0 +1,12 @@
+{
+  "name": "lesson-13-raw-http-server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "bun test",
+    "dev": "bun --watch src/server.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
