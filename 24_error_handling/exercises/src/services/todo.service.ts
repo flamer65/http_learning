@@ -12,16 +12,16 @@ export class TodoService {
     return todo;
   }
 
-  async createTodo(data: any) {
-    if (!data.title) {
-      throw new ValidationError("Title is required");
-    }
-    if (typeof data.title !== "string") {
-      throw new ValidationError("Title must be a string");
-    }
-    if (data.title.trim() === "") {
-      throw new ValidationError("Title cannot be empty");
-    }
-    return this.repo.create(data);
+async createTodo(data: any) {
+  if (data.title === undefined) {
+    throw new ValidationError("Title is required");
   }
+  if (typeof data.title !== "string") {
+    throw new ValidationError("Title must be a string");
+  }
+  if (data.title.trim() === "") {
+    throw new ValidationError("Title cannot be empty");
+  }
+  return this.repo.create(data);
+}
 }

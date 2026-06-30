@@ -15,10 +15,11 @@ export const errorHandler = (
   // If it is, use its statusCode, code, and message for the response
   if (err instanceof AppError) {
     // TODO: return res.status(...).json(...)
+    return res.status(err.statusCode).json({ error: err.message, code: err.code });
   }
 
   // 3. If it's an unexpected error, return 500
+  res.status(500).json({ error: "Internal server error", code: "INTERNAL_ERROR" });
   // Do NOT expose the stack trace to the client!
-  // The response should be: { error: "Internal server error", code: "INTERNAL_ERROR" }
-  res.status(500).json({ error: "TODO", code: "TODO" });
+
 };
